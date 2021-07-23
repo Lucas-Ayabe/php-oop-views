@@ -1,0 +1,15 @@
+{
+    "name": "lucas/oop",
+    "authors": [
+        {
+            "name": "Lucas Akira Ayabe",
+            "email": "lucas.ayabe@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Application\\": "Application/"
+        }
+    },
+    "require": {}
+}
