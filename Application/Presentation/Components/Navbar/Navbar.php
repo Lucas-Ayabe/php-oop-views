@@ -16,6 +16,7 @@ class Navbar extends FileTemplate
 
     public function setData(array $links = []): self
     {
+        // outras válidações para verificar se a estrutura de dados veio correta...
         if (!empty($links)) {
             $this->links = $links;
         }
