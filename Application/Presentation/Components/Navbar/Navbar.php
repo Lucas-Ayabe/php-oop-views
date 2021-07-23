@@ -14,12 +14,18 @@ class Navbar extends FileTemplate
         $this->links = $links;
     }
 
-    public function render(array $links = []): string
+    public function setData(array $links = []): self
     {
         if (!empty($links)) {
             $this->links = $links;
         }
 
+        return $this;
+    }
+
+    public function render(array $links = []): string
+    {
+        $this->setData($links);
         return parent::render(["items" => $this->links]);
     }
 
